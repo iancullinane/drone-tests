@@ -8,8 +8,8 @@ steps:
     settings:
       repo: eignhpants/drone-tests
       username:
-        from_secret: dh_user_name
+        from_secret: dh_username
       password:
-        from_secret: dh_pw
+        from_secret: dh_password
     publish:
       image: eignhpants/sheeta
