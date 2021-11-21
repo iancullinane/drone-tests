@@ -1,0 +1,11 @@
+kind: pipeline
+name: default
+
+# Pipeline for putting cloudformation files into S3 for nested stacks
+steps:
+  - name: docker push
+    image: plugins/docker
+    settings:
+      repo: eignhpants/drone-tests
+    publish:
+      image: eignhpants/drone-tests
