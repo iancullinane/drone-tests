@@ -7,5 +7,9 @@ steps:
     image: plugins/docker
     settings:
       repo: eignhpants/drone-tests
+      username:
+        from_secret: dh_user_name
+      password:
+        from_secret: dh_pw
     publish:
-      image: eignhpants/drone-tests
+      image: eignhpants/sheeta
